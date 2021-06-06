@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+:root{
+    --font-caveat:'Caveat', "cursive";
+    --font-roboto:'Roboto' 'cursive';
+
+    --bg-form:linear-gradient(1deg, #e6271659 5%, #00d5ff70 100%);
+}
+html{
+    box-sizing: border-box;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+    /* font-size: 24px; */
+    font-family: var(--font-roboto);
+    font-weight: lighter;
+    color: dimgray;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    transform: scale(1.2);
+}
+h1{
+    font-size: 2rem;
+}
+h1:hover{
+    color: tomato;
+}
+h3,h4{
+    font-size: 22px;
+    font-family: var(--font-caveat);
+}
+p:hover{
+    color: black;
+    transform: scale(1.1);
+    text-shadow:5px 5px 10px rgb(243, 107, 130);
+}
+hr{
+    width: 60%;
+}
+input:focus{
+    outline:none;
+    border: 0;
+}
+body{
+    background-color: whitesmoke;
+    text-align: center;
+    cursor:context-menu;
+}
+form{
+    background:var(--bg-form);
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow:column wrap;
+    align-items: center;
+    border-radius:2%;
+}
+form>*{
+    margin-bottom:0.8rem;
+}
+form label{
+    width: 40%;
+    margin-top: 1rem;
+}
+form input[type="text"],[type="email"],[type="number"]{
+    width: 40%;
+    height: 5vh;
+}
+.gender{
+    width: 60%;
+    display:flex;
+    justify-content: space-evenly;
+}
+.gender label{
+    width:30%;
+    margin-top: 0%;
+}
+form select{
+    width: 40%;
+    height: 4vh;
+}
+.specialization{
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.specialization label{
+    width: 90%;
+    margin-top: 0%;
+}
+form textarea{
+    resize: none;
+    border-radius: 2%;
+}
+
+form button{
+    width: 20%;
+    height:6vh;
+    border: none;
+    border-radius:2%;
+    margin-left: 75%;
+    font-size: 20px;
+}
+form button:hover{
+    cursor: pointer;
+    background-color:grey;
+    color: whitesmoke;
+}

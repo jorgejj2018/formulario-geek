@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Form  - Formulario</h1>
+    <p id="description">Welcome developer - Bienvenida desarrollador</p>
+    <form action="" id="survey-form">
+        <label for="name" id="name-label">Name - Nombre</label>
+        <input type="text" name="name" id="name" placeholder="Ingresa Tu Nombre" required>
+        <label for="email" id="email-label">Email - Correo</label>
+        <input type="email" name="email" id="email" placeholder="Ingresa Tu Email" required>
+        <label for="number" id="number-label">Age - Edad</label>
+        <input type="number" name="number" id="number" placeholder="Ingresa un Numero" min="0" max="100" required>
+        ´
+        <h2>Gender - Genero</h2>
+        <div class="gender">
+        <label for="man">Man - Hombre</label>
+        <input type="radio" name="gener-radio" id="man" value="man" checked>
+        <label for="girls">Girls - Mujer</label>
+        <input type="radio" name="gener-radio" id="girl" value="girl">
+        </div>
+        <select id="dropdown" name="dropdown"  required>
+            <option disabled selected value>select your category</option>
+            <option value="junior">Junior</option>
+            <option value="senior">senior</option>
+          </select>
+          
+        <h2>Area of ​​specialization - Area De Especializacion -</h2>
+        <div class="specialization">
+        <input type="checkbox" name="web" id="web" value="Web" checked>
+        <label for="web">Web</label>
+        <input type="checkbox" name="mobile" id="mobile" value="Mobile">
+        <label for="mobile">Mobile - Movil</label>
+        <input type="checkbox" name="desktop" id="desktop" value="Desktop">
+        <label for="desktop">Desktop - Escritorio</label>
+        </div>
+        <h2>Comments - Comentarios</h2>
+        <textarea name="" id="" cols="30" rows="5"></textarea>
+        <button type="submit" id="submit">Send</button>
+    </form>
+
+    <h3>Jorge Quintero</h3>
+    <h3>Frontend Developer - Desarrollador Frontend</h3>
+    <h4>Geek 2021</h4>
+
+    <script src="main.js"></script>
+</body>
+</html>
